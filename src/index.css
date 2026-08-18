@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/*Responsividade*/
+@media screen and (max-width: 768px) {
+    .Banner{
+        width: 100%;
+    }
+    .Card{
+        width: 100%;
+    }
+}
