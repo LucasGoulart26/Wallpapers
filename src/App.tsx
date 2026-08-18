@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { wallpapers } from "./data/wallpapers";
 
 function App() {
   const[active, setActive] = useState("All");
@@ -10,7 +11,11 @@ function App() {
     "Space",
     "Minimalist",
     "City"
-  ]
+  ];
+
+  const filterWallpapers = active === "All"
+  ? wallpapers
+  : wallpapers.filter((wallpaper) => wallpaper.categoria.toLocaleLowerCase().includes(active.toLowerCase()))
   return(
     <div className="w-full h-screen bg-zinc-800">
       <div className="w-full h-20 flex items-center justify-between p-5 bg-zinc-900">
@@ -28,8 +33,15 @@ function App() {
         ))}
       </div>
       <div className="w-full p-5 flex items-center justify-center flex-col bg-zinc-800">
-        <div className="w-[90%] h-20 flex items-center justify-items-start p-3 border-l-4 border-l-blue-500 bg-zinc-700">
+        <div className="w-[90%] h-20 flex items-center justify-items-start p-3 rounded-lg border-l-4 border-l-blue-500 bg-zinc-700">
           <h2 className="text-3xl text-white">Recent Wallpapers</h2>
+        </div>
+        <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-5">
+          {filterWallpapers.map((wallpaper, index) => (
+            <div key={index} className="w-80 bg-zinc-700 border-2 border-zinc-600 overflow-hidden relative rounded-2xl">
+              <img src={wallpaper.wallpaper} alt="Wallpaper" className="w-full h-full hover:scale-110 opacity-75 transition-all duration-300"/>
+            </div>
+          ))}
         </div>
       </div>
     </div>
