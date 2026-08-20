@@ -20,7 +20,7 @@ function App() {
     <div className="w-full h-screen bg-zinc-800">
       <div className="w-full h-20 flex items-center justify-between p-5 bg-zinc-900">
         <h1 className="text-3xl text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-500">Wallpapers</h1>
-        <div className="w-96 h-11 flex items-center justify-center">
+        <div className="Search w-96 h-11 flex items-center justify-center">
           <input type="text" placeholder="Search wallpapers" className="w-full h-full outline-0 p-3 bg-zinc-700 border-2 border-zinc-600 rounded-bl-lg rounded-tl-lg text-white placeholder:text-white"/>
           <button className="w-12 h-full cursor-pointer flex items-center justify-center bg-blue-500 active:bg-blue-600 transition-all duration-300 rounded-br-lg rounded-tr-lg">
             <FaSearch className="text-2xl text-white"/>
@@ -38,7 +38,7 @@ function App() {
         </div>
         <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-5">
           {filterWallpapers.map((wallpaper, index) => (
-            <div key={index} className="Card w-80 bg-zinc-700 border-2 border-zinc-600 overflow-hidden relative rounded-2xl">
+            <div key={index} className="Card w-80 h-40 bg-zinc-700 border-2 border-zinc-600 overflow-hidden relative rounded-2xl">
               <img src={wallpaper.wallpaper} alt="Wallpaper" className="w-full h-full hover:scale-110 opacity-75 transition-all duration-300"/>
             </div>
           ))}
