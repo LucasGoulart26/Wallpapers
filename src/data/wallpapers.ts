@@ -22,6 +22,15 @@ import Space5 from "../assets/Img/wallpaperSpace5.jpg";
 import Space6 from "../assets/Img/wallpaperSpace6.jpg";
 import Space7 from "../assets/Img/wallpaperSpace7.jpg";
 import Space8 from "../assets/Img/wallpaperSpace8.jpg";
+import Minimalist1 from "../assets/Img/wallpaperMinimalist.png";
+import Minimalist2 from "../assets/Img/wallpaperMinimalist2.jpg";
+import Minimalist3 from "../assets/Img/wallpaperMinimalist3.jpg";
+import Minimalist4 from "../assets/Img/wallpaperMinimalist4.jpg";
+import Minimalist5 from "../assets/Img/wallpaperMinimalist5.jpg";
+import Minimalist6 from "../assets/Img/wallpaperMinimalist6.jpg";
+import Minimalist7 from "../assets/Img/wallpaperMinimalist7.jpg";
+import Minimalist8 from "../assets/Img/wallpaperMinimalist8.jpg";
+
 
 export const wallpapers = [
   {
@@ -119,5 +128,37 @@ export const wallpapers = [
   {
     wallpaper: Space8,
     categoria: "Space",
+  },
+  {
+    wallpaper: Minimalist1,
+    categoria: "Minimalist",
+  },
+  {
+    wallpaper: Minimalist2,
+    categoria: "Minimalist",
+  },
+  {
+    wallpaper: Minimalist3,
+    categoria: "Minimalist",
+  },
+  {
+    wallpaper: Minimalist4,
+    categoria: "Minimalist",
+  },
+  {
+    wallpaper: Minimalist5,
+    categoria: "Minimalist",
+  },
+  {
+    wallpaper: Minimalist6,
+    categoria: "Minimalist",
+  },
+  {
+    wallpaper: Minimalist7,
+    categoria: "Minimalist",
+  },
+  {
+    wallpaper: Minimalist8,
+    categoria: "Minimalist",
   },
 ];

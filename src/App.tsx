@@ -38,7 +38,7 @@ function App() {
         </div>
         <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-5">
           {filterWallpapers.map((wallpaper, index) => (
-            <div key={index} className="Card w-80 h-40 bg-zinc-700 border-2 border-zinc-600 overflow-hidden relative rounded-2xl">
+            <div key={index} className="Card w-80 h-44 bg-zinc-700 border-2 border-zinc-600 overflow-hidden relative rounded-2xl">
               <img src={wallpaper.wallpaper} alt="Wallpaper" className="w-full h-full hover:scale-110 opacity-75 transition-all duration-300"/>
             </div>
           ))}
